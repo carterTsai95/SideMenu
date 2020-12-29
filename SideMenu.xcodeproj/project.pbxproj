@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		2B5B2F97259AC66900A6FA1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B2F96259AC66900A6FA1C /* ContentView.swift */; };
 		2B5B2F99259AC66A00A6FA1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5B2F98259AC66A00A6FA1C /* Assets.xcassets */; };
 		2B5B2F9C259AC66A00A6FA1C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5B2F9B259AC66A00A6FA1C /* Preview Assets.xcassets */; };
+		2B5B2FA5259ACCB100A6FA1C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B2FA4259ACCB100A6FA1C /* MenuView.swift */; };
+		2B5B2FA9259ADB3600A6FA1C /* PureSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2B5B2FA8259ADB3600A6FA1C /* PureSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,7 @@
 		2B5B2F98259AC66A00A6FA1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B5B2F9B259AC66A00A6FA1C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B5B2F9D259AC66A00A6FA1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B5B2FA4259ACCB100A6FA1C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5B2FA9259ADB3600A6FA1C /* PureSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +58,7 @@
 			children = (
 				2B5B2F94259AC66900A6FA1C /* SideMenuApp.swift */,
 				2B5B2F96259AC66900A6FA1C /* ContentView.swift */,
+				2B5B2FA4259ACCB100A6FA1C /* MenuView.swift */,
 				2B5B2F98259AC66A00A6FA1C /* Assets.xcassets */,
 				2B5B2F9D259AC66A00A6FA1C /* Info.plist */,
 				2B5B2F9A259AC66A00A6FA1C /* Preview Content */,
@@ -85,6 +90,9 @@
 			dependencies = (
 			);
 			name = SideMenu;
+			packageProductDependencies = (
+				2B5B2FA8259ADB3600A6FA1C /* PureSwiftUI */,
+			);
 			productName = SideMenu;
 			productReference = 2B5B2F91259AC66900A6FA1C /* SideMenu.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +120,9 @@
 				Base,
 			);
 			mainGroup = 2B5B2F88259AC66900A6FA1C;
+			packageReferences = (
+				2B5B2FA7259ADB3600A6FA1C /* XCRemoteSwiftPackageReference "pure-swift-ui" */,
+			);
 			productRefGroup = 2B5B2F92259AC66900A6FA1C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B5B2F97259AC66900A6FA1C /* ContentView.swift in Sources */,
+				2B5B2FA5259ACCB100A6FA1C /* MenuView.swift in Sources */,
 				2B5B2F95259AC66900A6FA1C /* SideMenuApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +340,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B5B2FA7259ADB3600A6FA1C /* XCRemoteSwiftPackageReference "pure-swift-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CodeSlicing/pure-swift-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B5B2FA8259ADB3600A6FA1C /* PureSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B5B2FA7259ADB3600A6FA1C /* XCRemoteSwiftPackageReference "pure-swift-ui" */;
+			productName = PureSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B5B2F89259AC66900A6FA1C /* Project object */;
 }
